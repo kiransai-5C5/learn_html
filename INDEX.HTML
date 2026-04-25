@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Concepts with Colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML + CSS Concepts</h1>
+    <p>Beginner Friendly Learning Page</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <button onclick="go('headings')">Headings</button>
+    <button onclick="go('text')">Text</button>
+    <button onclick="go('colors')">Colors</button>
+    <button onclick="go('images')">Images</button>
+    <button onclick="go('lists')">Lists</button>
+    <button onclick="go('table')">Table</button>
+    <button onclick="go('form')">Form</button>
+</nav>
+
+<!-- Sections -->
+
+<section id="headings" class="box blue">
+    <h2>Headings</h2>
+    <p>HTML provides 6 levels of headings.</p>
+    <h1>H1 - Main Title</h1>
+    <h2>H2 - Sub Title</h2>
+    <h3>H3 - Smaller Title</h3>
+</section>
+
+<section id="text" class="box green">
+    <h2>Text Formatting</h2>
+    <p><b>Bold</b> text is strong.</p>
+    <p><i>Italic</i> text is stylish.</p>
+    <p><u>Underline</u> highlights text.</p>
+</section>
+
+<!-- COLOR THEORY SECTION -->
+<section id="colors" class="box orange">
+    <h2>Colors in HTML & CSS</h2>
+
+    <p>There are different ways to apply colors:</p>
+
+    <h3>1. Color Names</h3>
+    <p style="color:red;">Example: red, blue, green</p>
+
+    <h3>2. HEX Values</h3>
+    <p style="color:#3498db;">Example: #3498db</p>
+
+    <h3>3. RGB Values</h3>
+    <p style="color:rgb(255,0,0);">Example: rgb(255, 0, 0)</p>
+
+    <h3>4. Background Color</h3>
+    <p style="background-color:yellow;">This uses background color</p>
+
+    <p>
+        👉 Color is used to improve UI and readability.  
+        👉 HEX gives precise control.  
+        👉 RGB is useful for dynamic colors.  
+    </p>
+</section>
+
+<section id="images" class="box purple">
+    <h2>Images</h2>
+    <p>Images are added using the &lt;img&gt; tag.</p>
+
+    <img src="https://picsum.photos/200" alt="Random Image">
+
+    <p>This image is fetched from an online source.</p>
+</section>
+
+<section id="lists" class="box pink">
+    <h2>Lists</h2>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Learn</li>
+        <li>Practice</li>
+    </ol>
+</section>
+
+<section id="table" class="box yellow">
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Kiran</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>22</td>
+        </tr>
+    </table>
+</section>
+
+<section id="form" class="box gray">
+    <h2>Form</h2>
+
+    <form>
+        <input type="text" placeholder="Enter Name"><br>
+        <input type="email" placeholder="Enter Email"><br>
+        <input type="password" placeholder="Password"><br>
+
+        <p>Gender:</p>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female<br>
+
+        <p>Skills:</p>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS<br><br>
+
+        <input type="submit">
+        <input type="reset">
+        <button type="button">Click</button>
+    </form>
+</section>
+
+<script>
+function go(id){
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
